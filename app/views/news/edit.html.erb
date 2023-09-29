@@ -1,0 +1,20 @@
+<div class="row py-5">
+  <div class="col-12">
+    <h1 class="text-center">Editing news</h1>
+  </div>
+</div>
+
+<div class="row py-5">
+  <div class="col-12">
+    <%= render "form", news: @news %>
+  </div>
+</div>
+
+<div class="row py-5">
+  <div class="col-6">
+    <%= link_to "Vuelve a esta noticia", @news, class: "btn btn-primary w-100" %>
+  </div>
+  <div class="col-6">
+    <%= link_to "Vuelve a las noticias", root_path, class: "btn btn-secondary w-100" %>
+  </div>
+</div>

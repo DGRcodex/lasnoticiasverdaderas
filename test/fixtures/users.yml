@@ -1,0 +1,42 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# This model initially had no columns defined. If you add columns to the
+# model remove the "{}" from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+one: 
+  email: topherpl98@gmail.com
+  encrypted_password: $2a$12$53P9CAWF9Ly/FMnxY7ZNa.c9I9wxkTV86uPMEYIx2yskSWfFo4pc6
+  role: 2
+# column: value
+#
+two:
+  email: lucas@olimpo.cl
+  encrypted_password: $2a$12$53P9CAWF9Ly/FMnxY7ZNa.c9I9wxkTV86uPMEYIx2yskSWfFo4pc6
+  role: 1
+# column: value
+three:
+  email: test1@olimpo.cl
+  encrypted_password: $2a$12$53P9CAWF9Ly/FMnxY7ZNa.c9I9wxkTV86uPMEYIx2yskSWfFo4pc6
+  role: 1
+# column: value
+four:
+  email: test2@olimpo.cl
+  encrypted_password: $2a$12$53P9CAWF9Ly/FMnxY7ZNa.c9I9wxkTV86uPMEYIx2yskSWfFo4pc6
+  role: 1
+# column: value
+five:
+  email: test3@olimpo.cl
+  encrypted_password: $2a$12$53P9CAWF9Ly/FMnxY7ZNa.c9I9wxkTV86uPMEYIx2yskSWfFo4pc6
+  role: 1
+# column: value
+six:
+  email: test4@olimpo.cl
+  encrypted_password: $2a$12$53P9CAWF9Ly/FMnxY7ZNa.c9I9wxkTV86uPMEYIx2yskSWfFo4pc6
+  role: 1
+# column: value
+seven:
+  email: test5@olimpo.cl
+  encrypted_password: $2a$12$53P9CAWF9Ly/FMnxY7ZNa.c9I9wxkTV86uPMEYIx2yskSWfFo4pc6
+  role: 1
+# column: value

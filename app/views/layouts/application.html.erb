@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Las Noticias Verdaderas</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= render 'shared/navbar' %>
+    <div class="container">
+      <div id="flash-messages">
+        <% flash.each do |type, message| %>
+          <div class="alert alert-<%= type %>">
+            <%= message %>
+          </div>
+        <% end %>
+      </div>
+      <%= yield %>
+    </div>
+    <%= render 'shared/footer' %>
+    <script src="https://kit.fontawesome.com/178860d74b.js" crossorigin="anonymous"></script>
+  </body>
+</html>

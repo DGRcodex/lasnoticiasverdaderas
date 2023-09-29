@@ -1,0 +1,33 @@
+<div class="row">
+  <h2 class="text-center py-5">Inicia sesión</h2>
+  
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <div class="mb-3">
+      <%= f.label :Correo, class: "form-label" %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control" %>
+    </div>
+  
+    <div class="mb-3">
+      <%= f.label :Contraseña, class: "form-label" %><br />
+      <%= f.password_field :password, autocomplete: "current-password", class: "form-control" %>
+    </div>
+  
+    <% if devise_mapping.rememberable? %>
+      <div class="mb-3">
+        <%= f.check_box :remember_me, class:"form-check-input" %>
+        <%= f.label :remember_me, "Recuérdame", class:"form-check-label" %>
+      </div>
+    <% end %>
+
+    <div class="col-12 py-3">
+      <div class="actions">
+        <%= f.submit "Ingresa", class: "btn btn-success w-100" %>
+      </div>
+    </div>
+  
+  <% end %>
+</div>
+
+<div class="row py-3">
+  <%= render "devise/shared/links" %>
+</div>

@@ -1,0 +1,17 @@
+<div class="row py-5">
+  <div class="col-12">
+    <h1 class="text-center">Nuevo comentario</h1>
+  </div>
+</div>
+
+<div class="row py-5">
+  <div class="col-12">
+    <%= render "form", comment: @comment %>
+  </div>
+</div>
+
+<div class="row py-5">
+  <div class="col-12">
+    <%= link_to "Back to comments", comments_path%>
+  </div>
+</div>
